@@ -1,0 +1,202 @@
+/* Estilos para a primeira página HTML (gerenciador de tarefas) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="time"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    color: black;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.actions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.actions button.delete-task {
+    color: #dc3545;
+}
+
+.actions button.edit-task {
+    color: #ffc107;
+}
+
+.actions button.complete-task {
+    color: #28a745;
+}
+
+.actions button:hover {
+    color: #007bff;
+}
+
+button.delete-task:hover {
+    color: #ff0000;
+}
+
+button.edit-task:hover {
+    color: #ffbb33;
+}
+
+button.complete-task:hover {
+    color: #00cc44;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form input[type="text"],
+    form textarea {
+        padding: 8px;
+    }
+}
+
+#popout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#popout:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a segunda página HTML (página inicial com botões de registro e login) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+.registro-login {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.registro-login + .registro-login {
+    right: 125px; 
+}
