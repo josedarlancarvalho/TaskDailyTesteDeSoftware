@@ -15,7 +15,13 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         
         const data = await response.text();
         document.getElementById('mensagemLogin').textContent = data;
-    } catch (error) {
+
+        // Se o login for bem-sucedido, oculte os botões de registro e login
+        if (response.ok) {
+            document.getElementById('registroBtn').style.display = 'none';
+            document.getElementById('loginBtn').style.display = 'none';
+        }
+    } catch (error) { 
         console.error('Erro ao fazer login:', error);
     }
 });
