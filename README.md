@@ -10,5 +10,7 @@ O TaskDaily é um aplicativo de gerenciamento de tarefas com funcionalidades bá
 - **Marcar Tarefas como Concluídas:** Os usuários podem marcar tarefas como concluidas.
 
 **Teste Funcional Automatizado para Registro de Usuário**
-**Visão Geral**
+
+##Visão Geral
+
 Este projeto contém um teste funcional automatizado para verificar a funcionalidade de registro de usuário em uma aplicação web. O teste é projetado para garantir que o processo de registro funcione conforme o esperado, incluindo o manuseio correto da entrada do usuário e das respostas do servidor. O teste é implementado usando Selenium WebDriver e Node.js.
